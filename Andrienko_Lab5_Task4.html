@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cумма  чисел от А до В</title>
+</head>
+<body>
+<script>
+    let a, b, summ = 0, odd = "";
+    a = Number(prompt("Введите число a:"));
+    b = Number(prompt("Введите число b:"));
+    if (a < b)
+    {
+        for (let i = a; i < b; i++)
+        {
+            summ += i;
+            if (i % 2 != 0)
+            {
+                odd += i + " ";
+            }
+        }
+        alert("Сумма чисел от А до В равна " + summ);
+        alert("В числовом промежутке от А до В найдены нечетные числа " + odd);
+    }
+    else
+    {
+        alert("Ошибка: a >= b");
+    }
+</script>
+</body>
+</html>

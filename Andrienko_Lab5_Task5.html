@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Доставка товара</title>
+</head>
+<body>
+    <script>
+        let counter =prompt("Введите число:");
+        let factorial = 1;
+        let i = counter;
+        do
+        {
+            if (i == 0)
+            {
+                factorial = 1;
+                break;
+            }
+            factorial = factorial * i;
+            i = i - 1;
+        }
+        while (i > 0);
+        alert("Количество возможных вариантов доставки товара: " + counter + "! = " + factorial);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Фигуры с помощью циклов </title>
+</head>
+<body>
+    <h1 style="color:aqua"><big>Прямоугольный треугольник:</big></h1>
+    <script>
+        let max = 6;
+        for (let h = 1; h < 7; h++)
+        {
+            for (var j = max--; j < 7; j++)
+            {
+                document.write("*\n");
+            }
+            document.write("<br>");
+        }
+    </script>
+    <h2 style="color:violet"><big>Равносторонний треугольник</big></h2>
+    <script>
+        let line = 5;
+        let area = 4;
+        let first_star = 1;
+        for (let h = 0; h < line; h++)
+        {
+            for (let p = 0; p < area; p++)
+            {
+                document.write("&nbsp\n");
+            }
+            for (let i = 0; i < first_star; i++)
+            {
+                document.write("*");
+            }
+            area -= 1;
+            first_star += 2;
+            document.write("<br>");
+        }
+    </script> 
+</body>
+</html >

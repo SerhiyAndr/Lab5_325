@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Функции для арифметичесих действий</title>
+</head>
+<body>
+   <style>
+       body {
+           position: absolute;
+           background-color: white;
+           left: 150px;
+           top: 50px;
+           font-family: 'Times New Roman', Times, serif;
+           font-size: 25px;
+           color: darkorchid;
+       }
+    </style>
+    <script>
+        function add(a, b) //Функция +
+        {
+            return a + b;
+        }
+        function sub(a, b)//Функция -
+        {
+            return a - b;
+        }
+        function mul(a, b)//Функция *
+        {
+            return a * b;
+        }
+        function div(a, b)//Функция /
+        {
+            if (b == 0) {
+                return 'Ошибка';
+            }
+            else
+            {
+                return a / b;
+            }
+        }
+        let number1 = Number(prompt("Введите первое число: "));
+        let sign = prompt("Введите знак арифметической операции: + - * / ");
+        let number2 = Number(prompt("Введите второе число: "));
+        switch (sign)
+        {
+            case "+":
+                result = add(number1, number2);
+                break;
+            case "-":
+                result = sub(number1, number2);
+                break;
+            case "*":
+                result = mul(number1, number2);
+                break;
+            case "/":
+                result = div(number1, number2);
+                break;
+            default:
+                document.write( sign + " - не является знаком арифметической операции !");
+        }
+        document.write("<p>" + number1 + " " + sign + " " + number2 + " = " + result);
+    </script>
+</body>
+</html>

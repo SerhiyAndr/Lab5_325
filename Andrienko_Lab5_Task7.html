@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Массив размерностью N элементов</title>
+</head>
+<body>
+<script>
+    let values = [4, 100, 6, 13, 11, 74, 90, 10, 80, 5, 477,500];
+    let max = Number.MIN_VALUE;
+    let min = Number.MAX_VALUE;
+    let summ = 0;
+    let oddValues = [];
+    let average = 0;
+    for (let index = 0; index < values.length; index++)
+    {
+        const element = values[index];
+        if (element > max)
+        {
+            max = element;
+        }
+        if (element < min)
+        {
+            min = element;
+        }
+        summ += element;
+    }
+    for (let j = 0; j < values.length; j++)
+    {
+        if (values[j] % 2 != 0) {
+            oddValues.push(values[j]);
+        }
+    }
+    average = summ / values.length;
+    console.log("Массив размерностью N : " + values);
+    console.log("Максимальное значение массива : " + max);
+    console.log("Минимальное значение массива : " + min);
+    console.log("Сумма всех элементов : " + summ);
+    console.log("Нечетные значения массива : " + oddValues);
+    console.log("Cреднее арифметическое всех элементов : " + average);
+</script>
+</body>
+</html>
